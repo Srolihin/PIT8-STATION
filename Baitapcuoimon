@@ -4,7 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Đặt lịch sạc - PIT8 STATION</title>
-  <link href="style.css" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Ethnocentric';
+      src: url('https://cdn.jsdelivr.net/gh/itfoundry/ethnocentric/Ethnocentric-Regular.otf') format('opentype');
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f2f6fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #1c9e54;
+      font-family: 'Ethnocentric', sans-serif;
+      font-size: 32px;
+      display: block;
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    form input,
+    form button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    form button {
+      background-color: #1c9e54;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #158a45;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #confirmation {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e0f8e9;
+      border: 1px solid #b6e2c5;
+      border-radius: 12px;
+      color: #1c6e35;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
